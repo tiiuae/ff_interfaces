@@ -1,0 +1,19 @@
+# Goal definition
+# An array of waypoints for the vehicle to follow in sequence.
+ff_interfaces/Waypoint[] waypoints
+
+# An enumeration to define the desired action after the last waypoint is reached.
+uint8 final_action
+uint8 LAND = 0      # Land the vehicle at the final waypoint.
+uint8 LOITER = 1    # Remain at the final waypoint (e.g., hover for a drone or wait for a UGV).
+---
+# Result definition
+# Indicates whether the entire mission was completed successfully.
+bool success
+
+# A human-readable message describing the outcome (e.g., "Mission complete" or "Failed to reach waypoint 3").
+string message
+---
+# Feedback definition
+# The index of the waypoint in the 'waypoints' array that the vehicle is currently navigating towards.
+uint32 current_waypoint_index

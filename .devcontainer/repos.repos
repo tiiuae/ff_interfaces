@@ -1,0 +1,9 @@
+repositories:
+    px4-msgs:
+        type: git
+        url: https://github.com/tiiuae/PX4-msgs.git
+        version: 40b9a17b87b18023db1dd299ac1de838692853c1
+    fognav-msgs:
+        type: git
+        url: https://github.com/tiiuae/fognav_msgs.git
+        version: f7349f879e92bf08d7b545a71be7470647f6db3d

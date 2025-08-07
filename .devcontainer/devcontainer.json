@@ -1,0 +1,30 @@
+{
+    "name": "ROS2 Humble Dev",
+    "dockerFile": "Dockerfile",
+    "workspaceFolder": "/root/ros2_ws",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/root/ros2_ws/src/package,type=bind",
+        "source=/home/junior/dotfiles/nvim/.config/nvim,target=/root/.config/nvim,type=bind"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+            "ms-iot.vscode-ros",
+            "ms-python.python",
+            "ms-vscode.cpptools",
+            "twxs.cmake",                       // Syntax highlighting for CMakeLists.txt
+            "ms-vscode.cmake-tools",           // CMake integration: configure/build/debug
+            "vector-of-bool.cmake-tools",      // (Old version, still popular — optional)
+            "ms-vscode.cpptools-extension-pack"// More C++ features (optional)
+            ]
+        }
+    },
+    "runArgs": ["--network=host"]
+    // "runArgs": [
+    //     "--network=dsf_network1",
+    //     "--add-host=nats-server:172.20.0.1",
+    //     "--env=DRONE_DEVICE_ID=vehicle1",
+    //     "--env=NATS_SERVER_URL=nats://172.20.0.1:4222",
+    //     "--env=LOG_LEVEL=INFO"
+    // ]
+}

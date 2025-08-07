@@ -1,0 +1,20 @@
+{
+    "names":
+    {
+        "fastrtps":
+        {
+            "cmake-args":
+            [
+                "-DSECURITY=ON",
+                "-DSHM_TRANSPORT_DEFAULT=OFF"
+            ]
+        },
+        "rmw_fastrtps_cpp":
+        {
+            "cmake-args":
+            [
+                "-DSECURITY=ON"
+            ]
+        }
+    }
+}
