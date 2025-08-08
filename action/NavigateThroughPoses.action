@@ -17,3 +17,5 @@ string message
 # Feedback definition
 # The index of the waypoint in the 'waypoints' array that the vehicle is currently navigating towards.
 uint32 current_waypoint_index
+uint32 number_of_poses_remaining
+builtin_interfaces/Duration navigation_time

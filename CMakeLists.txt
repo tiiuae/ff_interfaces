@@ -18,7 +18,7 @@ find_package(action_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/Waypoint.msg"
     "action/NavigateThroughPoses.action"
-    DEPENDENCIES sensor_msgs
+    DEPENDENCIES sensor_msgs geometry_msgs
 )
 
 if(BUILD_TESTING)
